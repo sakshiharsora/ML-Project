@@ -143,7 +143,9 @@ function Prediction() {
     setErrorMsg("")
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/predict", {
+      const API_URL = import.meta.env.VITE_API_URL
+
+      const response = await fetch(`${API_URL}/predict`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -179,7 +181,7 @@ function Prediction() {
       setResult(data.prediction)
     } catch (err) {
       console.error(err)
-      setErrorMsg("Unable to connect to FastAPI backend at http://127.0.0.1:8000. Ensure server is running.")
+      setErrorMsg("Unable to connect to the FastAPI backend. Please try again.")
     } finally {
       setLoading(false)
     }
