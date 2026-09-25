@@ -47,7 +47,7 @@ function ModelEvaluation() {
         <StatCard
           icon={<BarChart4 size={22} />}
           value="0.1934"
-          label="ROC-AUC Score"
+          label="F1 Score"
         />
 
       </section>
