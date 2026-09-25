@@ -28,25 +28,25 @@ function ModelEvaluation() {
 
         <StatCard
           icon={<Award size={22} />}
-          value="99.2%"
+          value="77.90%"
           label="Test Accuracy"
         />
 
         <StatCard
           icon={<Zap size={22} />}
-          value="98.5%"
+          value="92.64%"
           label="Precision Rate"
         />
 
         <StatCard
           icon={<Target size={22} />}
-          value="97.8%"
+          value="10.82%"
           label="Recall Rate"
         />
 
         <StatCard
           icon={<BarChart4 size={22} />}
-          value="0.994"
+          value="0.1934"
           label="ROC-AUC Score"
         />
 
